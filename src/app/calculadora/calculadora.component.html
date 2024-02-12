@@ -1,0 +1,20 @@
+<h1>Mini caluladora</h1>
+<div class="container">
+  <form>
+    <div class="d-flex justify-content-start align-items-center">
+      <label for="Numero1" class="me-2">Numero 1:</label>
+      <input name="Numero1" [(ngModel)]="numero1"/>
+    </div>
+
+    <div class="d-flex justify-content-start align-items-center mt-2">
+      <label for="Numero2" class="me-2">Numero 2:</label>
+      <input name="Numero2" [(ngModel)]="numero2"/>
+    </div>
+
+    <div class="d-flex justify-content-start align-items-center mt-2">
+        <button type="button" class="me-2" (click)="restar()">restar</button>
+        <button type="button" (click)="sumar()" class="btn btn-primary">sumar</button>
+      </div>
+  </form>
+</div>
+<p class="mt-4">{{mensaje}}</p>
